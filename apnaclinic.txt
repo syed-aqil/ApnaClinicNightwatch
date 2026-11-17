@@ -1,0 +1,82 @@
+
+> nw-apnaclinic@1.0.0 test:android
+> npx nightwatch --env app.android.real
+
+Starting Appium Server on port 4723...
+[dotenv@17.2.2] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+[On Boarding] Test Suite
+────────────────────────────────────────────────
+  Using: android on ANDROID (16).
+
+  Running Login Flow:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Login button Clicked
+  √ Passed [ok]: Phone number Entered
+  √ Passed [ok]: Phone number entered and Get OTP clicked
+Found OTP: 1381
+OTP to use for Subscription: 1381
+  √ Passed [ok]: OTP entered
+  √ Passed [ok]: Logged In Successfully
+
+  ✨ PASSED. 5 assertions. (49.852s)
+
+  Running Online Consultation:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Navigated to Online Consultation
+  √ Passed [ok]: Selected Consultation Category General Medicine
+  √ Passed [ok]: Selected Consultation type General Physician
+  √ Passed [ok]: Selected General Physician for Consultation
+  √ Passed [ok]: Navigated back to home page
+
+  ✨ PASSED. 5 assertions. (12.805s)
+
+  Running Pharmacy Store:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Navigated to Pharmacy
+  √ Passed [ok]: Search for Medicine
+  √ Passed [ok]: Searched Medicine
+  √ Passed [ok]: Selected the Searched Tablets
+  √ Passed [ok]: Navigated back to home page
+
+  ✨ PASSED. 5 assertions. (10.645s)
+
+  Running Lab Tests:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Navigated to Lab Tests
+  √ Passed [ok]: Selected the City
+  √ Passed [ok]: Selected the Tested Type
+  √ Passed [ok]: Navigated back to home page
+
+  ✨ PASSED. 4 assertions. (8.045s)
+
+  Running Surgery Booking:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Navigated to Surgery Booking Section
+  √ Passed [ok]: Selected City for Surgery Booking
+  √ Passed [ok]: Selected Surgery Type
+  √ Passed [ok]: Selected Surgery Center
+  √ Passed [ok]: Navigated to Home Page
+
+  ✨ PASSED. 5 assertions. (12.049s)
+
+  Running Navbar Items:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Navigated to My Bookings from Navbar
+  √ Passed [ok]: Navigated to Support Section from Navbar
+  √ Passed [ok]: Navigated to Profile from Navbar
+  √ Passed [ok]: Navigated to Home from Navbar
+
+  ✨ PASSED. 4 assertions. (6.478s)
+
+  Running Logout Flow:
+───────────────────────────────────────────────────────────────────────────────────────────────────
+  √ Passed [ok]: Open Profile Menu
+  √ Passed [ok]: Logout clicked
+  √ Passed [ok]: Logged Out Successfully
+
+  ✨ PASSED. 3 assertions. (11.998s)
+
+  ✨ PASSED. 31 total assertions (1m 58s)
+ Wrote HTML report file to: D:\ApnaClinic\tests_output\nightwatch-html-report\index.html
+

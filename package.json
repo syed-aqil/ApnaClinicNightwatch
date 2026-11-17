@@ -1,0 +1,26 @@
+{
+  "name": "nw-apnaclinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "appium": "npx appium --base-path /",
+    "test:android": "npx nightwatch --env app.android.real"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "appium": "^3.0.2",
+    "appium-uiautomator2-driver": "^5.0.3",
+    "nightwatch": "^3.12.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.4",
+    "mitmproxy": "^2.1.2",
+    "uiautomator": "^0.1.0"
+  }
+}
